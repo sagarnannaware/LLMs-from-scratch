@@ -51,6 +51,9 @@ You can alternatively view this and other files on GitHub at [https://github.com
 > [!TIP]
 > If you're seeking guidance on installing Python and Python packages and setting up your code environment, I suggest reading the [README.md](setup/README.md) file located in the [setup](setup) directory.
 
+> [!NOTE]
+> **New to LLMs?** This fork adds **[llm-zero-to-hero/](llm-zero-to-hero/)** — a self-contained course explaining LLMs from first principles: 12 chapters (vectors and gradients → attention → training → RLVR/GRPO → serving → agents), 8 runnable Jupyter notebooks that train a real LLM on a laptop CPU, and a ~250-term glossary.
+
 <br>
 <br>
 
