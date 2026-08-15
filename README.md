@@ -51,6 +51,9 @@ You can alternatively view this and other files on GitHub at [https://github.com
 > [!TIP]
 > If you're seeking guidance on installing Python and Python packages and setting up your code environment, I suggest reading the [README.md](setup/README.md) file located in the [setup](setup) directory.
 
+> [!NOTE]
+> **New to LLMs?** This fork adds a self-paced study path in [learning-guide/](learning-guide/): a 12-week roadmap through the chapters, a ~250-term glossary, and a "GPT-2 → 2026" document covering everything that came after the book (RoPE, GQA, MoE, RLVR/GRPO, reasoning models, serving, agents).
+
 <br>
 <br>
 
