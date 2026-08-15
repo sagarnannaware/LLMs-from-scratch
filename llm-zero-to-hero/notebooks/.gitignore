@@ -1,0 +1,3 @@
+# artifacts produced by running the notebooks
+*.pth
+.ipynb_checkpoints/

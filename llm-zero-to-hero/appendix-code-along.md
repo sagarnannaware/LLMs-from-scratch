@@ -89,7 +89,7 @@ This book uses `tiktoken` (OpenAI's fast BPE) for the main path and implements B
 
 **Token embeddings.** An embedding layer is a lookup table: a matrix of shape `(vocab_size, emb_dim)` where row *i* is the vector for token ID *i*. `nn.Embedding` is mathematically identical to one-hot encoding times a weight matrix, but implemented as an indexing operation instead of a wasteful matmul — that's exactly what the `03_bonus_embedding-vs-matmul` notebook demonstrates. These vectors are **learned parameters**, updated by backpropagation like everything else.
 
-**Positional embeddings.** Self-attention is permutation-invariant: by itself it sees a *bag* of tokens, with no notion of order. "dog bites man" and "man bites dog" would be identical. GPT-2 fixes this with a second learned lookup table of shape `(context_length, emb_dim)`, indexed by position, added elementwise to the token embeddings. (Modern models use RoPE instead — see [03-modern-llm-landscape.md](03-modern-llm-landscape.md).)
+**Positional embeddings.** Self-attention is permutation-invariant: by itself it sees a *bag* of tokens, with no notion of order. "dog bites man" and "man bites dog" would be identical. GPT-2 fixes this with a second learned lookup table of shape `(context_length, emb_dim)`, indexed by position, added elementwise to the token embeddings. (Modern models use RoPE instead — see [03 — Embeddings & Position](03-embeddings-and-position.md).)
 
 **The sliding-window dataloader.** Training data is `(input, target)` pairs where the target is the input shifted right by one:
 
@@ -469,4 +469,4 @@ Once the book is done, the single highest-value folder in this repo is [`ch05/07
 | Dropout in blocks | No dropout | Huge unique-token corpora make it unnecessary |
 | Biases in linear layers | No biases | Free parameter savings, no measurable loss |
 
-Do those three notebooks. Then read [03-modern-llm-landscape.md](03-modern-llm-landscape.md), which picks up exactly there and takes you through MoE, RLVR, reasoning models, serving, and agents.
+Do those three notebooks. Then read [05 — The Transformer](05-transformer-architecture.md) §5.5 and [07 — Post-Training](07-post-training.md), which pick up exactly there and take you through MoE, RLVR, reasoning models, serving, and agents.
